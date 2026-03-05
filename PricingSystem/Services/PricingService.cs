@@ -25,6 +25,10 @@ namespace PricingSystem.Services
 
         public PricingResponse CalculatePrice(OrderRequest request)
         {
+
+            if (request.Quantity <= 0)
+                throw new Exception("Quantity must be greater than zero");
+
             var product = _productService.GetProduct(request.ProductId);
 
             if (product == null)
