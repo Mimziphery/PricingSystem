@@ -25,9 +25,6 @@ Navigate to project folder and run:
 
 /api/pricing/calculate?productId=PROD-001&quantity=55&country=MK
 
-
-/api/pricing/calculate
-
 ## Test Cases Results
 
 ### Test Case 1
